@@ -37,7 +37,7 @@
             const path_to_root = "";
             const default_light_theme = "navy";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-f6d2a06e.js";
+            window.path_to_searchindex_js = "searchindex-18d88ac7.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-3aefbd58.js"></script>
@@ -1776,8 +1776,8 @@ with, so old edits never shift.</p>
 contrast than the Essentials sliders, and works on top of them.</p>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/edit-curve.webp" alt="The Curve section: the Adjust buttons over the graph, the parametric curve’s first"><span class="img-wrapper"><img src="img/edit-curve.webp" alt="The Curve section: the Adjust buttons over the graph, the parametric curve’s first"></span></label></p>
 <p>The <strong>Curve</strong> section has five curves, chosen with the <strong>Adjust</strong> buttons above the graph: a
-curve in a small box for the parametric curve, then a ring each for the point curve and the
-red, green and blue channels.</p>
+ring with a curve in it for the parametric curve, then a plain ring each for the point curve
+and the red, green and blue channels.</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -1862,12 +1862,25 @@ on a photo. This table says which to reach for.</p>
 <h2 id="color-mixer"><a class="header" href="#color-mixer">Color Mixer</a></h2>
 <p>Eight colour bands (red, orange, yellow, green, aqua, blue, purple, magenta), each with <strong>Hue</strong>,
 <strong>Saturation</strong> and <strong>Luminance</strong>.</p>
-<p>The <strong>Adjust</strong> buttons choose how they are laid out: all three properties for every band, one
-property across all bands, or one band’s three sliders together.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/edit-color-mixer.webp" alt="The Color Mixer: Mixer, Point Color and Curves… across the top, then Hue, Saturation, Luminance, All and Color"><span class="img-wrapper"><img src="img/edit-color-mixer.webp" alt="The Color Mixer: Mixer, Point Color and Curves… across the top, then Hue, Saturation, Luminance, All and Color"></span></label></p>
+<p>Across the top of the section are <strong>Mixer</strong>, <strong>Point Color</strong> and <strong>Curves…</strong> (which opens
+<a href="#color-curves">Color Curves</a> in a window). Under them, one row chooses what the Mixer shows:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>View</th><th>Shows</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Hue</strong>, <strong>Saturation</strong>, <strong>Luminance</strong></td><td>That one property for all eight colours</td></tr>
+<tr><td><strong>All</strong></td><td>All three properties for all eight colours</td></tr>
+<tr><td><strong>Color</strong></td><td>One colour’s three sliders. Choose the colour with the row of dots</td></tr>
+</tbody>
+</table>
+</div>
 <p>Typical uses: darken a blue sky with blue Luminance; calm an over-bright green with green
 Saturation; warm skin by nudging orange Hue.</p>
 <h3 id="point-color"><a class="header" href="#point-color">Point Color</a></h3>
-<p><strong>Point Color</strong> (the second tab of the Color Mixer) adjusts one colour you pick, together with
+<p><strong>Point Color</strong> (beside Mixer at the top of the Color Mixer) adjusts one colour you pick, together with
 the colours like it.</p>
 <ol>
 <li>Click the <strong>Point Color Dropper</strong> and click the colour on the photo. (<kbd>Esc</kbd> stops
@@ -1961,7 +1974,8 @@ brightness: drag up to lighten a colour, down to darken it.</p>
 <p>Click the hue strip to choose a band; drag a band’s handle to move its centre. A view button
 shows the photo grey wherever the chosen band reaches nothing.</p>
 <h2 id="color-curves"><a class="header" href="#color-curves">Color Curves</a></h2>
-<p>Click <strong>Advanced</strong> in the Color Mixer to open <strong>Color Curves</strong> in its own window. Each curve
+<p>Click <strong>Curves…</strong> at the top of the Color Mixer to open <strong>Color Curves</strong> in its own window
+(a dot beside it says curves are set; in a mask it is <strong>Color Curves…</strong> under the colour tools). Each curve
 changes one property along another:</p>
 <div class="table-wrapper">
 <table>
