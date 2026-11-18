@@ -37,7 +37,7 @@
             const path_to_root = "";
             const default_light_theme = "navy";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-18d88ac7.js";
+            window.path_to_searchindex_js = "searchindex-5344b90d.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-3aefbd58.js"></script>
@@ -2411,14 +2411,35 @@ tick the parts to select: <strong>Entire Person</strong>, <strong>Face Skin</str
 <tr><th>Mask</th><th>Selects</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Luminance Range</strong></td><td>A range of brightness. Set <strong>Fade In From</strong>, <strong>Full From</strong>, <strong>Full To</strong>, <strong>Fade Out To</strong>, or <strong>Pick from Photo</strong></td></tr>
+<tr><td><strong>Luminance Range</strong></td><td>A range of brightness, set on a bar (below) or with <strong>Pick from Photo</strong></td></tr>
 <tr><td><strong>Colour Range</strong></td><td>Colours like one you click. <strong>Lightness</strong> and <strong>Chroma</strong> set how alike</td></tr>
-<tr><td><strong>Depth Range</strong></td><td>A range of distance from the camera, from the photo’s depth map. Click the photo to set it from a place</td></tr>
+<tr><td><strong>Depth Range</strong></td><td>A range of distance from the camera, from the photo’s depth map, set on the same kind of bar (near at the left, far at the right). <strong>Pick from Photo</strong> sets it from a place you click</td></tr>
 <tr><td><strong>Magic Wand</strong></td><td>Colours like the place you click; <strong>Contiguous</strong> keeps to what is joined to it</td></tr>
 <tr><td><strong>Qualifier</strong></td><td>A colourist’s key by hue, saturation and luminance (below)</td></tr>
 </tbody>
 </table>
 </div>
+<h3 id="the-range-bar"><a class="header" href="#the-range-bar">The range bar</a></h3>
+<p>Luminance Range and Depth Range are set on one bar: dark to light for luminance, near to far
+for depth.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/edit-luminance-range.webp" alt="A Luminance Range mask: the range as a box on a dark-to-light bar, a triangle under each end of its fades, and Feather"><span class="img-wrapper"><img src="img/edit-luminance-range.webp" alt="A Luminance Range mask: the range as a box on a dark-to-light bar, a triangle under each end of its fades, and Feather"></span></label></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>To</th><th>Do this</th></tr>
+</thead>
+<tbody>
+<tr><td>Move the whole range</td><td>Drag inside the box</td></tr>
+<tr><td>Set where the mask is full</td><td>Drag an edge of the box. Its fade moves with it</td></tr>
+<tr><td>Soften both ends alike</td><td>Drag <strong>Feather</strong></td></tr>
+<tr><td>Soften one end only</td><td>Drag the triangle under that end</td></tr>
+<tr><td>Move finely</td><td>Hold <kbd>⌥</kbd> while dragging</td></tr>
+<tr><td>Start from a place in the photo</td><td>Click <strong>Pick from Photo</strong>, then the photo</td></tr>
+</tbody>
+</table>
+</div>
+<p>The numbers under the bar are its four ends, from 0 to 100: where the fade starts and where
+the mask is full, on each side. Outside the triangles the mask selects nothing.</p>
 <h2 id="the-brush"><a class="header" href="#the-brush">The brush</a></h2>
 <div class="table-wrapper">
 <table>
