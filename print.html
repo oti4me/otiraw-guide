@@ -37,10 +37,10 @@
             const path_to_root = "";
             const default_light_theme = "navy";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-acb2c666.js";
+            window.path_to_searchindex_js = "searchindex-f6d2a06e.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-f618375c.js"></script>
+        <script src="toc-3aefbd58.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -424,7 +424,7 @@ together to narrow them down.</li>
 <h2 id="3-edit-one-photo"><a class="header" href="#3-edit-one-photo">3. Edit one photo</a></h2>
 <p>Select a pick and press <kbd>D</kbd> for the Edit workspace.</p>
 <ol>
-<li>In <strong>Basic</strong>, click <strong>Auto</strong> for a starting point, or set <strong>Exposure</strong> yourself.</li>
+<li>In <strong>Essentials</strong>, click <strong>Auto</strong> for a starting point, or set <strong>Exposure</strong> yourself.</li>
 <li>Fix the colour: choose a <strong>WB</strong> preset, drag <strong>Temp</strong> and <strong>Tint</strong>, or press <kbd>W</kbd>
 and click something that should be neutral grey.</li>
 <li>Shape the tone with <strong>Contrast</strong>, <strong>Highlights</strong>, <strong>Shadows</strong>, <strong>Whites</strong> and <strong>Blacks</strong>.</li>
@@ -784,7 +784,8 @@ a virtual copy’s mark, a composition’s mark, and Assist’s findings if you 
 <li>Double-click a photo (or press <kbd>E</kbd>) to open it in the loupe.</li>
 <li>Drag the scroll bar to jump through a long shoot; it shows the dates you pass.</li>
 <li>Right-click a photo for everything you can do with it: flags, ratings, labels, stacking,
-virtual copies, Photo Merge, Open With, moving, copying, renaming and the Trash.</li>
+virtual copies, Photo Merge, Open With, moving, copying, renaming, the Trash, and copying,
+pasting or resetting its edit (<strong>Reset All Settings</strong>).</li>
 </ul>
 <h2 id="loupe"><a class="header" href="#loupe">Loupe</a></h2>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/library-loupe.webp" alt="The loupe: one photo large, the Navigator showing it whole"><span class="img-wrapper"><img src="img/library-loupe.webp" alt="The loupe: one photo large, the Navigator showing it whole"></span></label></p>
@@ -1457,14 +1458,44 @@ you actually pick and adjusts, separately for each kind of shoot (wedding, portr
 needs a number of your picks before the learning counts, and says how many it has.
 <strong>Forget What I’ve Picked</strong> clears it.</p>
 <h2 id="assisted-review"><a class="header" href="#assisted-review">Assisted Review</a></h2>
-<p>The <strong>Assisted Review</strong> panel is a simpler view of the same checks: each photo is tagged <strong>No
-issues detected</strong>, <strong>Need review</strong> or <strong>Issues detected</strong>, with the likely problem (closed
-eyes, out-of-focus eyes, bad exposure).</p>
+<p>The <strong>Assisted Review</strong> panel is a simpler view of the same checks: three questions asked of
+every photo, and the photos counted by the answers.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/assisted-review.webp" alt="The Assisted Review panel: what is checked, Review Selected, and the results as counts"><span class="img-wrapper"><img src="img/assisted-review.webp" alt="The Assisted Review panel: what is checked, Review Selected, and the results as counts"></span></label></p>
+<h3 id="what-is-checked"><a class="header" href="#what-is-checked">What is checked</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Control</th><th>What it does</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Check: Closed Eyes</strong>, <strong>Soft Eyes</strong>, <strong>Poor Exposure</strong></td><td>Which of the three are looked for</td></tr>
+<tr><td><strong>Photos: Show Tags</strong></td><td>A small tag on each photo in the grid and filmstrip for what was found. Its edge is amber for likely, red for found, grey for unsure</td></tr>
+<tr><td><strong>Review as Folders Open</strong></td><td>Reviews every folder automatically. Off, photos are reviewed only when you ask</td></tr>
+<tr><td><strong>Review Selected</strong></td><td>Reviews the selected photos now</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="results"><a class="header" href="#results">Results</a></h3>
+<p>The results are a small table. Each row is a check; each column says how sure Assist is:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Column</th><th>Means</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Likely</strong></td><td>Probably so: worth a look</td></tr>
+<tr><td><strong>Found</strong></td><td>Found, surely</td></tr>
+<tr><td><strong>Unsure</strong></td><td>Couldn’t be told (no face found, eyes hidden)</td></tr>
+</tbody>
+</table>
+</div>
+<p>Under them, <strong>No Issues</strong> counts the photos with nothing found, and <strong>Not Reviewed</strong> those not
+looked at yet.</p>
+<p><strong>Every count is a filter.</strong> Click a count to show only those photos; click it again to stop.
+Several counts can be on at once. Click a column’s name to turn the whole column on or off.</p>
+<p>At the foot of the panel:</p>
 <ul>
-<li><strong>Review Selected</strong> checks the selected photos now.</li>
-<li><strong>Review Folders as They Open</strong> checks every folder automatically. Off, photos are reviewed
-only when you ask.</li>
-<li><strong>Filters</strong> shows photos by tag; <strong>Clear Review Filters</strong> removes them.</li>
+<li><strong>Clear Filters</strong> shows every photo again.</li>
 <li><strong>Reset Review</strong> (<kbd>⇧⌘U</kbd>) drops the selected photos’ review so they can be reviewed
 again.</li>
 </ul>
@@ -1526,7 +1557,7 @@ any setting again later, in any order, or reset everything, and the result is al
 fresh from the original data. See
 <a href="#how-otiraw-keeps-your-work">How OtiRAW keeps your work</a>.</p>
 <h2 id="the-layout"><a class="header" href="#the-layout">The layout</a></h2>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/edit.webp" alt="The Edit workspace: presets and snapshots on the left, the photo, and the histogram, tool buttons and Basic section on the right"><span class="img-wrapper"><img src="img/edit.webp" alt="The Edit workspace: presets and snapshots on the left, the photo, and the histogram, tool buttons and Basic section on the right"></span></label></p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/edit.webp" alt="The Edit workspace: presets and snapshots on the left, the photo, and the histogram, tool buttons and Essentials section on the right"><span class="img-wrapper"><img src="img/edit.webp" alt="The Edit workspace: presets and snapshots on the left, the photo, and the histogram, tool buttons and Essentials section on the right"></span></label></p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -1566,8 +1597,8 @@ the marking keys (<kbd>P</kbd>, <kbd>X</kbd>, <kbd>1</kbd>–<kbd>5</kbd>…) wo
 <tr><th>Section</th><th>What is in it</th><th>Page</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Basic</strong></td><td>Profile, white balance, exposure, tone and presence</td><td><a href="#profile-white-balance-and-tone">Profile, white balance and tone</a></td></tr>
-<tr><td><strong>Tone Curve</strong></td><td>Parametric and point curves</td><td><a href="#tone-curve">Tone curve</a></td></tr>
+<tr><td><strong>Essentials</strong></td><td>Profile, white balance, exposure, tone and presence</td><td><a href="#essentials-profile-white-balance-and-tone">Essentials: profile, white balance and tone</a></td></tr>
+<tr><td><strong>Curve</strong></td><td>Parametric and point curves</td><td><a href="#curve">Curve</a></td></tr>
 <tr><td><strong>Color Mixer</strong></td><td>Hue, saturation and luminance by colour, and Point Color</td><td><a href="#color">Color</a></td></tr>
 <tr><td><strong>Color Grading</strong></td><td>Tints for shadows, midtones and highlights</td><td><a href="#color">Color</a></td></tr>
 <tr><td><strong>Primaries</strong>, <strong>Color Warper</strong>, <strong>Color Slice</strong></td><td>Colourist’s tools</td><td><a href="#color">Color</a></td></tr>
@@ -1605,7 +1636,7 @@ thin, medium or thick tracks.</p>
 </thead>
 <tbody>
 <tr><td>Undo, redo</td><td><kbd>⌘Z</kbd>, <kbd>⇧⌘Z</kbd></td></tr>
-<tr><td>Reset the whole edit (snapshots are kept)</td><td><kbd>⇧⌘R</kbd> (<strong>Reset All</strong>)</td></tr>
+<tr><td>Reset the whole edit (snapshots are kept)</td><td><kbd>⇧⌘R</kbd> (<strong>Reset All</strong>; <strong>Photo › Reset All Settings</strong>)</td></tr>
 <tr><td>See the photo as it was before</td><td><kbd>\</kbd></td></tr>
 <tr><td>Before and after together</td><td><kbd>Y</kbd></td></tr>
 </tbody>
@@ -1627,8 +1658,8 @@ each photo’s exposure from its own brightness.</p>
 <p>While you drag a slider, the photo is drawn as a fast draft and sharpened to full quality the
 moment you stop. Judge sharpening and noise at 100 % (<kbd>Z</kbd>).</p>
 <div style="break-before: page; page-break-before: always;"></div>
-<h1 id="profile-white-balance-and-tone"><a class="header" href="#profile-white-balance-and-tone">Profile, white balance and tone</a></h1>
-<p>The <strong>Basic</strong> section is where most edits start and many end. Work down it: profile, white
+<h1 id="essentials-profile-white-balance-and-tone"><a class="header" href="#essentials-profile-white-balance-and-tone">Essentials: profile, white balance and tone</a></h1>
+<p>The <strong>Essentials</strong> section is where most edits start and many end. Work down it: profile, white
 balance, exposure, tone, then presence.</p>
 <h2 id="profile"><a class="header" href="#profile">Profile</a></h2>
 <p>The profile decides how the camera’s colours are read, before anything else.</p>
@@ -1740,10 +1771,13 @@ with, so old edits never shift.</p>
 <a href="#histogram-scopes-and-clipping">Histogram, scopes and clipping</a>.</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
-<h1 id="tone-curve"><a class="header" href="#tone-curve">Tone curve</a></h1>
+<h1 id="curve"><a class="header" href="#curve">Curve</a></h1>
 <p>The tone curve maps each brightness in the photo to a new one. It gives finer control over
-contrast than the Basic sliders, and works on top of them.</p>
-<p>The <strong>Tone Curve</strong> section has five curves, chosen with the buttons above the graph:</p>
+contrast than the Essentials sliders, and works on top of them.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/edit-curve.webp" alt="The Curve section: the Adjust buttons over the graph, the parametric curve’s first"><span class="img-wrapper"><img src="img/edit-curve.webp" alt="The Curve section: the Adjust buttons over the graph, the parametric curve’s first"></span></label></p>
+<p>The <strong>Curve</strong> section has five curves, chosen with the <strong>Adjust</strong> buttons above the graph: a
+curve in a small box for the parametric curve, then a ring each for the point curve and the
+red, green and blue channels.</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -2036,7 +2070,7 @@ a few seconds. The status says <strong>Denoising…</strong>. After that, editin
 </table>
 </div>
 <h2 id="texture-clarity-and-dehaze"><a class="header" href="#texture-clarity-and-dehaze">Texture, Clarity and Dehaze</a></h2>
-<p>These are in <a href="#profile-white-balance-and-tone">Basic</a> under Presence. They are local contrast, not sharpening, but
+<p>These are in <a href="#essentials-profile-white-balance-and-tone">Essentials</a> under Presence. They are local contrast, not sharpening, but
 they interact: heavy Clarity makes noise more visible, so set noise reduction after it.</p>
 <h2 id="in-masks-and-in-export"><a class="header" href="#in-masks-and-in-export">In masks and in export</a></h2>
 <ul>
@@ -2733,7 +2767,7 @@ mask with those parts ticked. See <a href="#masks">Masks</a>.</li>
 <h1 id="looks-film-and-negatives"><a class="header" href="#looks-film-and-negatives">Looks, film and negatives</a></h1>
 <p>The <strong>Looks</strong> tool (<kbd>⇧L</kbd>) gives a photo a character in one step: a ready-made look, a
 LUT, a film stock, or the conversion of a photographed negative.</p>
-<p>A look sits <em>under</em> your edit. Basic, colour and masks all still work on top of it.</p>
+<p>A look sits <em>under</em> your edit. Essentials, colour and masks all still work on top of it.</p>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/edit-looks.webp" alt="The Looks tool: Negative Conversion, Looks and Film Emulation"><span class="img-wrapper"><img src="img/edit-looks.webp" alt="The Looks tool: Negative Conversion, Looks and Film Emulation"></span></label></p>
 <h2 id="profile-1"><a class="header" href="#profile-1">Profile</a></h2>
 <p>The <strong>Profile</strong> menu at the top chooses how the camera’s colours are read:</p>
@@ -2849,7 +2883,7 @@ light box, and measures each channel’s range.</li>
 <tbody>
 <tr><td><strong>Border</strong></td><td>How much of the frame’s edge the analysis ignores</td></tr>
 <tr><td><strong>Density</strong></td><td>The print’s overall density</td></tr>
-<tr><td><strong>Auto Balance</strong></td><td>The conversion sets the white balance; Basic’s is set aside while it is on</td></tr>
+<tr><td><strong>Auto Balance</strong></td><td>The conversion sets the white balance; Essentials’ is set aside while it is on</td></tr>
 <tr><td><strong>Channel</strong></td><td><strong>All</strong>, or <strong>Red</strong>, <strong>Green</strong> or <strong>Blue</strong> alone: one channel can be cleaner on a stained or tinted base</td></tr>
 <tr><td><strong>Colour Balance</strong></td><td>Each channel’s <strong>Shadows</strong> and <strong>Highlights</strong> against the others’, for cross-processed or expired film</td></tr>
 <tr><td><strong>Light Box › Falloff</strong></td><td>Corrects a light box that is brighter in the middle</td></tr>
@@ -3009,6 +3043,8 @@ changed are brighter. <strong>Check All</strong> and <strong>Check None</strong>
 <li>Press <kbd>⌥⌘V</kbd> (<strong>Paste</strong>).</li>
 </ol>
 <p>Pasting is one undo step, however many photos it changes.</p>
+<p><strong>Copy Settings</strong> and <strong>Paste Settings</strong> are also in the <strong>Photo</strong> menu and in a photo’s
+right-click menu, so an edit can be passed on from the Library’s grid.</p>
 <h2 id="sync"><a class="header" href="#sync">Sync</a></h2>
 <p><strong>Sync…</strong> sets the active photo’s settings on the other selected photos.</p>
 <ol>
@@ -3135,11 +3171,14 @@ running list. See <a href="#snapshots">Presets, copy, sync and Match Look</a>.</
 <tbody>
 <tr><td>Reset one slider</td><td>Double-click it</td></tr>
 <tr><td>Reset a section</td><td>Click the section’s reset button</td></tr>
-<tr><td>Reset the whole edit</td><td><strong>Reset All</strong> (<kbd>⇧⌘R</kbd>). Snapshots are kept</td></tr>
+<tr><td>Reset the whole edit</td><td><strong>Reset All</strong> at the foot of the right panels, or <strong>Photo › Reset All Settings</strong> (<kbd>⇧⌘R</kbd>). Snapshots are kept</td></tr>
 </tbody>
 </table>
 </div>
 <p>Reset All is itself a step you can undo.</p>
+<p><strong>From the Library.</strong> Reset All Settings works on every selected photo, without opening Edit:
+choose it in the <strong>Photo</strong> menu, or right-click a photo. <strong>Copy Settings</strong> and <strong>Paste
+Settings</strong> are beside it in both menus.</p>
 <h2 id="before-and-after"><a class="header" href="#before-and-after">Before and after</a></h2>
 <div class="table-wrapper">
 <table>
@@ -3187,7 +3226,7 @@ how many pixels there are at each brightness, darkest on the left, brightest on 
 <li>A pile against the left edge means crushed shadows; against the right edge, blown
 highlights.</li>
 <li>In Edit, drag in the histogram to move the tone sliders (see
-<a href="#tone-on-the-histogram">Profile, white balance and tone</a>).</li>
+<a href="#tone-on-the-histogram">Essentials</a>).</li>
 <li>As you move over the photo, the red, green and blue values under the pointer are shown under
 the histogram, each as a percentage of full.</li>
 </ul>
@@ -5833,7 +5872,7 @@ See <a href="#assistants">Assistants</a>.</p>
 <tr><td>White Balance Picker</td><td><kbd>W</kbd></td></tr>
 <tr><td>Copy Settings</td><td><kbd>⌥⌘C</kbd></td></tr>
 <tr><td>Paste Settings</td><td><kbd>⌥⌘V</kbd></td></tr>
-<tr><td>Reset All</td><td><kbd>⇧⌘R</kbd></td></tr>
+<tr><td>Reset All Settings</td><td><kbd>⇧⌘R</kbd></td></tr>
 <tr><td>Export LUT…</td><td><kbd>⌥⇧⌘L</kbd></td></tr>
 <tr><td>Update to Current Process</td><td><kbd>⌥⇧⌘G</kbd></td></tr>
 </tbody>

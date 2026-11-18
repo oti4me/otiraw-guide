@@ -36,10 +36,10 @@
             const path_to_root = "../";
             const default_light_theme = "navy";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-acb2c666.js";
+            window.path_to_searchindex_js = "../searchindex-f6d2a06e.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../toc-f618375c.js"></script>
+        <script src="../toc-3aefbd58.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -285,14 +285,44 @@ you actually pick and adjusts, separately for each kind of shoot (wedding, portr
 needs a number of your picks before the learning counts, and says how many it has.
 <strong>Forget What I’ve Picked</strong> clears it.</p>
 <h2 id="assisted-review"><a class="header" href="#assisted-review">Assisted Review</a></h2>
-<p>The <strong>Assisted Review</strong> panel is a simpler view of the same checks: each photo is tagged <strong>No
-issues detected</strong>, <strong>Need review</strong> or <strong>Issues detected</strong>, with the likely problem (closed
-eyes, out-of-focus eyes, bad exposure).</p>
+<p>The <strong>Assisted Review</strong> panel is a simpler view of the same checks: three questions asked of
+every photo, and the photos counted by the answers.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/assisted-review.webp" alt="The Assisted Review panel: what is checked, Review Selected, and the results as counts"><span class="img-wrapper"><img src="../img/assisted-review.webp" alt="The Assisted Review panel: what is checked, Review Selected, and the results as counts"></span></label></p>
+<h3 id="what-is-checked"><a class="header" href="#what-is-checked">What is checked</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Control</th><th>What it does</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Check: Closed Eyes</strong>, <strong>Soft Eyes</strong>, <strong>Poor Exposure</strong></td><td>Which of the three are looked for</td></tr>
+<tr><td><strong>Photos: Show Tags</strong></td><td>A small tag on each photo in the grid and filmstrip for what was found. Its edge is amber for likely, red for found, grey for unsure</td></tr>
+<tr><td><strong>Review as Folders Open</strong></td><td>Reviews every folder automatically. Off, photos are reviewed only when you ask</td></tr>
+<tr><td><strong>Review Selected</strong></td><td>Reviews the selected photos now</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="results"><a class="header" href="#results">Results</a></h3>
+<p>The results are a small table. Each row is a check; each column says how sure Assist is:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Column</th><th>Means</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Likely</strong></td><td>Probably so: worth a look</td></tr>
+<tr><td><strong>Found</strong></td><td>Found, surely</td></tr>
+<tr><td><strong>Unsure</strong></td><td>Couldn’t be told (no face found, eyes hidden)</td></tr>
+</tbody>
+</table>
+</div>
+<p>Under them, <strong>No Issues</strong> counts the photos with nothing found, and <strong>Not Reviewed</strong> those not
+looked at yet.</p>
+<p><strong>Every count is a filter.</strong> Click a count to show only those photos; click it again to stop.
+Several counts can be on at once. Click a column’s name to turn the whole column on or off.</p>
+<p>At the foot of the panel:</p>
 <ul>
-<li><strong>Review Selected</strong> checks the selected photos now.</li>
-<li><strong>Review Folders as They Open</strong> checks every folder automatically. Off, photos are reviewed
-only when you ask.</li>
-<li><strong>Filters</strong> shows photos by tag; <strong>Clear Review Filters</strong> removes them.</li>
+<li><strong>Clear Filters</strong> shows every photo again.</li>
 <li><strong>Reset Review</strong> (<kbd>⇧⌘U</kbd>) drops the selected photos’ review so they can be reviewed
 again.</li>
 </ul>
