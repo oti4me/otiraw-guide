@@ -36,7 +36,7 @@
             const path_to_root = "../";
             const default_light_theme = "navy";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-5344b90d.js";
+            window.path_to_searchindex_js = "../searchindex-e0043e6f.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc-3aefbd58.js"></script>
@@ -232,9 +232,9 @@ tick the parts to select: <strong>Entire Person</strong>, <strong>Face Skin</str
 </thead>
 <tbody>
 <tr><td><strong>Luminance Range</strong></td><td>A range of brightness, set on a bar (below) or with <strong>Pick from Photo</strong></td></tr>
-<tr><td><strong>Colour Range</strong></td><td>Colours like one you click. <strong>Lightness</strong> and <strong>Chroma</strong> set how alike</td></tr>
+<tr><td><strong>Colour Range</strong></td><td>Colours of a hue. <strong>Hue</strong> is a bar of every hue, the ones the mask takes shown bright: click or drag on it to choose. <strong>Width</strong> sets how many hues either side are taken, <strong>Saturation</strong> how strong a colour must be. <strong>Pick from Photo</strong> sets them from a place you click</td></tr>
 <tr><td><strong>Depth Range</strong></td><td>A range of distance from the camera, from the photo’s depth map, set on the same kind of bar (near at the left, far at the right). <strong>Pick from Photo</strong> sets it from a place you click</td></tr>
-<tr><td><strong>Magic Wand</strong></td><td>Colours like the place you click; <strong>Contiguous</strong> keeps to what is joined to it</td></tr>
+<tr><td><strong>Magic Wand</strong></td><td>Colours like the place you click. <strong>Lightness</strong> and <strong>Chroma</strong> set how alike; <strong>Contiguous</strong> keeps to what is joined to it</td></tr>
 <tr><td><strong>Qualifier</strong></td><td>A colourist’s key by hue, saturation and luminance (below)</td></tr>
 </tbody>
 </table>
@@ -260,6 +260,12 @@ for depth.</p>
 </div>
 <p>The numbers under the bar are its four ends, from 0 to 100: where the fade starts and where
 the mask is full, on each side. Outside the triangles the mask selects nothing.</p>
+<h3 id="the-hue-bar"><a class="header" href="#the-hue-bar">The hue bar</a></h3>
+<p>A Colour Range’s <strong>Hue</strong> is chosen on a bar of the hues themselves.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/edit-colour-range.webp" alt="A Colour Range mask: Hue as a bar of every hue, bright where the mask takes them, with Width and Saturation under it"><span class="img-wrapper"><img src="../img/edit-colour-range.webp" alt="A Colour Range mask: Hue as a bar of every hue, bright where the mask takes them, with Width and Saturation under it"></span></label></p>
+<p>The hues the mask takes are bright and the rest are dimmed, so you can see what is covered,
+and see it widen and narrow as you drag <strong>Width</strong>. Click or drag on the bar to move the hue;
+double-click to put it back.</p>
 <h2 id="the-brush"><a class="header" href="#the-brush">The brush</a></h2>
 <div class="table-wrapper">
 <table>
