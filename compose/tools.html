@@ -36,7 +36,7 @@
             const path_to_root = "../";
             const default_light_theme = "navy";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-e0043e6f.js";
+            window.path_to_searchindex_js = "../searchindex-84514074.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc-3aefbd58.js"></script>
@@ -225,6 +225,10 @@ what borders and added canvas are filled with.</li>
 <p><kbd>X</kbd> swaps them. <strong>Default Colors</strong> puts back black over white. Click a square to
 choose a colour; the Studio’s <strong>Color</strong> and <strong>Swatches</strong> tabs choose colours too, with
 harmonies (complementary, analogous, triadic…) and your recent colours.</p>
+<p>The Studio’s <strong>Sliders</strong> tab sets the colour with six sliders: <strong>Hue</strong>, <strong>Saturation</strong> and
+<strong>Brightness</strong>, then <strong>Red</strong>, <strong>Green</strong> and <strong>Blue</strong>. Each slider’s bar shows the colours it
+runs through with the others left as they are, so you can see where to drag. The hex code is
+beside the two colour squares; click a square to choose which colour the sliders set.</p>
 <h2 id="brush"><a class="header" href="#brush">Brush</a></h2>
 <div class="table-wrapper">
 <table>
@@ -245,7 +249,7 @@ harmonies (complementary, analogous, triadic…) and your recent colours.</p>
 <tr><th>Control</th><th>What it does</th><th>Key</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Size</strong></td><td>The brush’s width</td><td><kbd>[</kbd> <kbd>]</kbd></td></tr>
+<tr><td><strong>Size</strong></td><td>The brush’s width, in the canvas’s pixels</td><td><kbd>[</kbd> <kbd>]</kbd></td></tr>
 <tr><td><strong>Hardness</strong></td><td>How sharp its edge is</td><td><kbd>⇧[</kbd> <kbd>⇧]</kbd></td></tr>
 <tr><td><strong>Opacity</strong></td><td>How much paint a stroke lays down at most</td><td></td></tr>
 <tr><td><strong>Flow</strong></td><td>How quickly paint builds up within a stroke</td><td></td></tr>
@@ -262,6 +266,95 @@ Dynamics</strong>, <strong>Texture</strong>, <strong>Dual Tip</strong>, <strong>
 (a stabiliser for steady lines).</p>
 <p><strong>Edit › Define Brush from Selection</strong> makes a brush tip of the pixels inside a selection;
 <strong>Save Brush</strong> keeps your settings as a brush of your own.</p>
+<p>Brush sizes are in pixels of the canvas on every tool that paints (Brush, Remove and the
+retouching tools, the Toning tools and Liquify). A composition made from a photo has no size of
+its own until it is first saved; until then the sizes are counted in the photo’s own pixels,
+which is close but can differ if the photo is cropped. The status bar says “About … pixels,
+its photo’s” while that is so.</p>
+<p>Over the canvas the brush’s cursor has the shape of its tip, at the size, angle and roundness
+it will paint with:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Tip</th><th>Cursor</th></tr>
+</thead>
+<tbody>
+<tr><td>Round (Soft Round, Hard Round, Airbrush, Ink Pen, Pencil, Watercolor)</td><td>A ring</td></tr>
+<tr><td>Square (Marker, Confetti)</td><td>A square, or a bar when it is squashed</td></tr>
+<tr><td>Chalk (Chalk, Charcoal)</td><td>A rough-edged disc; rougher the softer the brush</td></tr>
+<tr><td>Spatter</td><td>Its drops</td></tr>
+<tr><td>Bristle (Dry Brush)</td><td>Its bristles’ lines</td></tr>
+<tr><td>A picture (a stamp)</td><td>The picture’s own outline</td></tr>
+</tbody>
+</table>
+</div>
+<p>Chalk, spatter and bristle tips fall a little differently at each dab, so their cursor shows
+one such dab. A brush too small on screen to show a shape is a ring.</p>
+<h3 id="the-brushes-section"><a class="header" href="#the-brushes-section">The Brushes section</a></h3>
+<p>The <strong>Brushes</strong> section, on the right, lists every brush with a stroke painted by it. Click
+its name to open it.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/compose-brushes.webp" alt="The Brushes section: a search, groups that fold, a stroke and a name for each brush, and Import… and Save Brush at the foot"><span class="img-wrapper"><img src="../img/compose-brushes.webp" alt="The Brushes section: a search, groups that fold, a stroke and a name for each brush, and Import… and Save Brush at the foot"></span></label></p>
+<ul>
+<li>Click a brush to paint with it: it takes up the Brush tool too.</li>
+<li>A brush whose tip is a picture (a stamp) is shown as that picture, not as a stroke.</li>
+<li>Brushes are in groups: <strong>Basic</strong> (the ready brushes), <strong>My Brushes</strong> (those you saved), and a
+group for each brush file you imported, named after the file. Click a group’s name to fold it.</li>
+<li>Type in <strong>Search brushes</strong> to show only the brushes with those letters in their names.</li>
+<li>Each brush’s size is at the right of its row, in the canvas’s pixels.</li>
+<li><strong>Import…</strong>, <strong>Save Brush</strong> and <strong>Delete Brush</strong> are at the foot. <strong>Delete Brush</strong> removes
+the brush in hand if it is one you saved or imported; the ready brushes can’t be deleted.</li>
+<li>Right-clicking one of your brushes also offers <strong>Delete Brush</strong>. Right-click an imported
+group’s name for <strong>Delete Group</strong>, which removes all its brushes; <strong>Edit › Delete Brush
+Group</strong> does the same for the group of the brush in hand.</li>
+</ul>
+<h3 id="the-brushs-menu-on-the-canvas"><a class="header" href="#the-brushs-menu-on-the-canvas">The brush’s menu on the canvas</a></h3>
+<p>With the Brush tool painting, <strong>right-click the canvas</strong> to open the brush’s menu where the
+pointer is.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/compose-brush-menu.webp" alt="The brush’s menu: the tip, the brush’s name, Mode and Settings…, four sliders, and the brushes"><span class="img-wrapper"><img src="../img/compose-brush-menu.webp" alt="The brush’s menu: the tip, the brush’s name, Mode and Settings…, four sliders, and the brushes"></span></label></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Part</th><th>What it does</th></tr>
+</thead>
+<tbody>
+<tr><td>The tip, in its box</td><td>Shows the tip as it will fall. Drag round it to turn the tip; double-click to set it upright</td></tr>
+<tr><td>The brush’s name</td><td>The brush in hand; <strong>Custom</strong> once you have changed it</td></tr>
+<tr><td><strong>Settings…</strong></td><td>Opens Brush Settings, with everything else</td></tr>
+<tr><td><strong>Mode</strong></td><td>Click to list the blend modes; click one to use it</td></tr>
+<tr><td><strong>Size</strong>, <strong>Opacity</strong>, <strong>Hardness</strong>, <strong>Flow</strong></td><td>The brush’s main settings. A picture tip has its own edge, so no Hardness</td></tr>
+<tr><td><strong>Search brushes</strong> and the list</td><td>The same brushes as the Brushes section; click one to paint with it</td></tr>
+</tbody>
+</table>
+</div>
+<p>Its sliders are as thick as your panels’ sliders (<strong>Settings › Interface › Slider track</strong>:
+thin, medium or thick). The menu stays open while you drag its sliders and try brushes. Click anywhere outside it, or
+press <kbd>Esc</kbd>, to close it.</p>
+<h3 id="importing-brushes"><a class="header" href="#importing-brushes">Importing brushes</a></h3>
+<p><strong>Import Brushes…</strong> (in the <strong>Brushes</strong> section, the <strong>Brush</strong> menu and the <strong>Edit</strong> menu) reads Photoshop brush files
+(<code>.abr</code>). Choose one file or several; their brushes are added after your saved ones, under the
+names they have in the file, in a group named after the file.</p>
+<p>What comes across:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>From the file</th><th>Result</th></tr>
+</thead>
+<tbody>
+<tr><td>The tip: a round tip’s size, hardness, angle and roundness, or a picture (a stamp)</td><td>Kept. A picture larger than 256 pixels is made smaller</td></tr>
+<tr><td>Spacing, Shape Dynamics, Scattering, Color Dynamics, Transfer</td><td>Kept</td></tr>
+<tr><td>Opacity, flow, blend mode, smoothing, wet edges, build-up</td><td>Kept</td></tr>
+<tr><td>Texture</td><td>The depth is kept; the app’s own grain stands in for the file’s pattern</td></tr>
+<tr><td>A dual brush</td><td>Its second tip is kept, not its own spacing and scatter</td></tr>
+<tr><td>Bristle tips</td><td>The app’s bristle tip stands in</td></tr>
+<tr><td>Erodible and airbrush tips, Noise, flip jitter, Purity, Brush Pose, Stylus Wheel and Rotation controls</td><td>Not kept</td></tr>
+</tbody>
+</table>
+</div>
+<p>If anything wasn’t kept, or a file couldn’t be read, a window says so when the import is done.
+An imported brush looks like its original but won’t paint exactly as it did there.</p>
+<p>A brush file gives each brush’s width in pixels. The brush is made that wide on the canvas you
+have open, and keeps that share of the canvas on others. Delete an imported brush with
+<strong>Delete Brush</strong>, like one of your own, or the whole file’s brushes with <strong>Delete Group</strong>.</p>
 <h2 id="remove-and-retouching"><a class="header" href="#remove-and-retouching">Remove and retouching</a></h2>
 <p><strong>Remove</strong> (<kbd>J</kbd>) has three modes:</p>
 <div class="table-wrapper">
