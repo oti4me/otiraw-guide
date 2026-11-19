@@ -37,7 +37,7 @@
             const path_to_root = "";
             const default_light_theme = "navy";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-3aac7324.js";
+            window.path_to_searchindex_js = "searchindex-84ef8126.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-3aefbd58.js"></script>
@@ -3854,6 +3854,29 @@ Dynamics</strong>, <strong>Texture</strong>, <strong>Dual Tip</strong>, <strong>
 (a stabiliser for steady lines).</p>
 <p><strong>Edit › Define Brush from Selection</strong> makes a brush tip of the pixels inside a selection;
 <strong>Save Brush</strong> keeps your settings as a brush of your own.</p>
+<h3 id="reference-photos"><a class="header" href="#reference-photos">Reference photos</a></h3>
+<p>The <strong>References</strong> panel sits at the bottom left of the canvas. It holds photos to look at
+while you work and to take colours from. Click its name to open or fold it.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/compose-references.webp" alt="The References panel: the photo shown, its zoom, its name with Remove, and a strip of all the references"><span class="img-wrapper"><img src="img/compose-references.webp" alt="The References panel: the photo shown, its zoom, its name with Remove, and a strip of all the references"></span></label></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>To</th><th>Do this</th></tr>
+</thead>
+<tbody>
+<tr><td>Add photos</td><td>Click <strong>Add…</strong> and choose one or several. Photos, JPEGs, PNGs and TIFFs all work</td></tr>
+<tr><td>Take a colour</td><td>Click the photo: the colour under the pointer becomes the foreground colour. Drag to keep sampling</td></tr>
+<tr><td>Look closer</td><td>Drag the zoom slider, pinch, or hold <kbd>⌘</kbd> and scroll. <strong>Fit</strong> shows all of it again</td></tr>
+<tr><td>Move about when zoomed</td><td>Scroll</td></tr>
+<tr><td>Show another</td><td>Click it in the strip</td></tr>
+<tr><td>Take one off the list</td><td><strong>Remove</strong>. The file itself is not touched</td></tr>
+<tr><td>Hide the panel</td><td><strong>View › Canvas › Show References</strong>, or right-click the canvas</td></tr>
+</tbody>
+</table>
+</div>
+<p>You don’t need the Eyedropper for this: clicking a reference takes its colour with any tool in
+hand, so with the Brush you can click a reference and paint straight away. The list of
+references is remembered between sessions and is the same for every composition.</p>
 <p>Brush sizes are in pixels of the canvas on every tool that paints (Brush, Remove and the
 retouching tools, the Toning tools and Liquify). A composition made from a photo has no size of
 its own until it is first saved; until then the sizes are counted in the photo’s own pixels,
@@ -4307,6 +4330,33 @@ some, and to the whole text otherwise. Superscript and Subscript need letters se
 </tbody>
 </table>
 </div>
+<h3 id="text-on-a-path"><a class="header" href="#text-on-a-path">Text on a path</a></h3>
+<p>Text can run along a pen path or round any shape: an ellipse, a rectangle, a star.</p>
+<ol>
+<li>Select the text layer and the shape or path together (<kbd>⇧</kbd>-click the second in
+the layers list).</li>
+<li>Choose <strong>Layer › Type on Path</strong>, or right-click the layers and choose <strong>Type on Path</strong>.</li>
+</ol>
+<p>The shape itself is left as it is, and the text follows it: move, resize, turn or reshape the
+shape and the text goes with it. Hide the shape’s layer if you want the text alone.</p>
+<p>With the text layer chosen, the <strong>Layer</strong> section has three more rows:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Row</th><th>What it does</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Path Start</strong></td><td>Where along the path the first letter stands, from its start (0 %) to its end</td></tr>
+<tr><td><strong>Path Offset</strong></td><td>How far the letters stand off the path, in hundredths of a line. Below 0 moves them across it</td></tr>
+<tr><td><strong>Path Side › Other side</strong></td><td>Puts the letters on the path’s other side, running the other way: inside a circle they ran round the outside of</td></tr>
+</tbody>
+</table>
+</div>
+<p>Round a closed shape, text longer than the outline carries on round it and overlaps its own
+start; along an open path it carries on straight past the end. You can type in text on a
+path as in any other: the caret and the selection follow the letters.</p>
+<p><strong>Layer › Type in Lines</strong> (also in the layer’s right-click menu) puts the text back on
+straight lines.</p>
 <h3 id="more"><a class="header" href="#more">More</a></h3>
 <div class="table-wrapper">
 <table>
@@ -4316,8 +4366,6 @@ some, and to the whole text otherwise. Superscript and Subscript need letters se
 <tbody>
 <tr><td><strong>Vertical</strong> text</td><td>The bar</td><td>Stacks each line’s letters downwards</td></tr>
 <tr><td><strong>Warp Text</strong></td><td>The bar</td><td>Bends the text into an arc or another shape; <strong>Bend</strong> sets how far</td></tr>
-<tr><td><strong>Type on Path</strong></td><td>Layer menu</td><td>Runs the text along a pen path or a shape’s outline</td></tr>
-<tr><td><strong>Type in Lines</strong></td><td>Layer menu</td><td>Puts it back on straight lines</td></tr>
 <tr><td><strong>Glyphs</strong></td><td>Studio tab</td><td>Every character in the font; click one to insert it</td></tr>
 <tr><td><strong>Styles</strong></td><td>Character and Paragraph tabs</td><td>Save a set of text settings and apply it elsewhere</td></tr>
 <tr><td><strong>Find and Replace Text…</strong></td><td>Edit menu</td><td>Across every text layer</td></tr>
