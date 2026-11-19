@@ -36,7 +36,7 @@
             const path_to_root = "../";
             const default_light_theme = "navy";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-84514074.js";
+            window.path_to_searchindex_js = "../searchindex-3aac7324.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc-3aefbd58.js"></script>
@@ -183,6 +183,49 @@ you resize them, and you can change the words, the font or the colour at any tim
 the foreground colour.</p>
 <p>To change text later, choose its layer; to change part of it, click in it and select the
 letters.</p>
+<h3 id="typing-and-selecting"><a class="header" href="#typing-and-selecting">Typing and selecting</a></h3>
+<p>With the Text tool, click a text to type in it. (With the Move tool, double-click it.)</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>To</th><th>Do this</th></tr>
+</thead>
+<tbody>
+<tr><td>Put the caret somewhere</td><td>Click there</td></tr>
+<tr><td>Select letters</td><td>Drag across them, or click and then <kbd>⇧</kbd>-click</td></tr>
+<tr><td>Select a word</td><td>Double-click it. Keep the button down and drag to select by whole words</td></tr>
+<tr><td>Select everything</td><td>Triple-click, or <kbd>⌘A</kbd></td></tr>
+<tr><td>Move by a word</td><td><kbd>⌥←</kbd> <kbd>⌥→</kbd></td></tr>
+<tr><td>Go to the line’s start or end</td><td><kbd>⌘←</kbd> <kbd>⌘→</kbd>, or <kbd>Home</kbd> <kbd>End</kbd>. In a text box that is the line as it wraps</td></tr>
+<tr><td>Go to the text’s start or end</td><td><kbd>⌘↑</kbd> <kbd>⌘↓</kbd></td></tr>
+<tr><td>Select as you move</td><td>Add <kbd>⇧</kbd> to any of those</td></tr>
+<tr><td>Delete a word</td><td><kbd>⌥⌫</kbd></td></tr>
+<tr><td>Delete to the line’s start</td><td><kbd>⌘⌫</kbd></td></tr>
+<tr><td>Finish</td><td><kbd>Esc</kbd> or <kbd>⌘↩</kbd>, or click the canvas outside the text</td></tr>
+</tbody>
+</table>
+</div>
+<p>A click outside the text only finishes typing; click again to start a new text there.</p>
+<h3 id="styling-part-of-a-text"><a class="header" href="#styling-part-of-a-text">Styling part of a text</a></h3>
+<p>Select the letters, then change them. Only those letters change:</p>
+<ul>
+<li>anything on the Text bar or the <strong>Character</strong> tab (font, size, bold, colour, highlight…);</li>
+<li><strong>Color</strong> in the <strong>Layer</strong> section;</li>
+<li>a colour picked in the Studio’s <strong>Color</strong>, <strong>Sliders</strong> or <strong>Swatches</strong> tabs, or from the
+colour squares.</li>
+</ul>
+<p>Typing stays active while you use a field elsewhere, such as a colour’s hex code or a font
+search, so the letters stay selected. With nothing selected, the Text bar and the Layer
+section change the whole text.</p>
+<h3 id="the-texts-box"><a class="header" href="#the-texts-box">The text’s box</a></h3>
+<p>With the Text tool, the text you are working on shows its frame.</p>
+<ul>
+<li><strong>A text box</strong> (drag with the Text tool to make one) has handles on its corners and sides.
+Dragging them resizes the box and the words wrap again; the letters keep their size.</li>
+<li><strong>A text with no box</strong> (made with a click) has corner handles. Dragging them makes the
+letters larger or smaller.</li>
+</ul>
+<p>Hold <kbd>⌥</kbd> to resize a box from its middle.</p>
 <h3 id="the-bar-and-the-character-tab"><a class="header" href="#the-bar-and-the-character-tab">The bar and the Character tab</a></h3>
 <div class="table-wrapper">
 <table>
@@ -191,7 +234,7 @@ letters.</p>
 </thead>
 <tbody>
 <tr><td><strong>Font</strong> and <strong>Style</strong></td><td>Any font installed on your computer, and its faces (Regular, Bold, Italic…)</td></tr>
-<tr><td><strong>Size</strong></td><td>The height of a line. <strong>Larger</strong> and <strong>Smaller</strong> step it</td></tr>
+<tr><td><strong>Size</strong></td><td>The height of a line, in the canvas’s pixels. <strong>Larger</strong> and <strong>Smaller</strong> step it</td></tr>
 <tr><td><strong>Color</strong></td><td>The letters’ colour</td></tr>
 <tr><td><strong>Bold</strong>, <strong>Italic</strong></td><td>The family’s own bold or italic face, or one made from the regular</td></tr>
 <tr><td><strong>Underline</strong>, <strong>Strikethrough</strong></td><td></td></tr>
@@ -203,6 +246,28 @@ letters.</p>
 </tbody>
 </table>
 </div>
+<h3 id="in-the-layer-section"><a class="header" href="#in-the-layer-section">In the Layer section</a></h3>
+<p>With a text layer chosen, the <strong>Layer</strong> section on the right has the same formatting as the
+bar, so you can set it without the Text tool in hand:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Row</th><th>What it holds</th></tr>
+</thead>
+<tbody>
+<tr><td>The box of words</td><td>The text itself, to edit</td></tr>
+<tr><td><strong>Size</strong>, <strong>Color</strong>, <strong>Align</strong>, <strong>Font</strong>, <strong>Tracking</strong>, <strong>Leading</strong></td><td>As on the bar. Size is in pixels</td></tr>
+<tr><td><strong>Step</strong></td><td><strong>A+</strong> and <strong>A−</strong>: a step larger or smaller</td></tr>
+<tr><td><strong>Style</strong></td><td>All Caps, Bold, Italic, Underline, Strikethrough, Superscript, Subscript</td></tr>
+<tr><td><strong>Highlight</strong></td><td>On or off, and its colour</td></tr>
+<tr><td><strong>List</strong></td><td>Bullets or Numbers</td></tr>
+<tr><td><strong>Direction</strong></td><td><strong>Vertical type</strong></td></tr>
+<tr><td><strong>Warp</strong></td><td>The warp’s shape, and <strong>Bend</strong> once one is chosen</td></tr>
+</tbody>
+</table>
+</div>
+<p>Like the bar, the letter settings apply to the letters selected on the canvas when there are
+some, and to the whole text otherwise. Superscript and Subscript need letters selected.</p>
 <h3 id="the-paragraph-tab"><a class="header" href="#the-paragraph-tab">The Paragraph tab</a></h3>
 <div class="table-wrapper">
 <table>
