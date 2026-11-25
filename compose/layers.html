@@ -36,10 +36,10 @@
             const path_to_root = "../";
             const default_light_theme = "navy";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-c4d6773a.js";
+            window.path_to_searchindex_js = "../searchindex-9e9faac0.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../toc-3aefbd58.js"></script>
+        <script src="../toc-047069e4.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -187,16 +187,35 @@ panel lists them, top first.</p>
 <tbody>
 <tr><td><strong>Picture</strong></td><td>A photo or image. A photo from your library keeps its edit</td><td><strong>Add Picture</strong>, or the Picture tool</td></tr>
 <tr><td><strong>Paint</strong></td><td>Brush strokes</td><td>Paint with the Brush on a new layer</td></tr>
-<tr><td><strong>Fill</strong></td><td>A solid colour, a gradient or a pattern</td><td><strong>New Fill Layer</strong></td></tr>
+<tr><td><strong>Fill</strong></td><td>A solid colour, a gradient or a pattern</td><td><strong>New Fill or Adjustment Layer</strong> in the Layers bar, or <strong>Layer › New Fill Layer</strong></td></tr>
 <tr><td><strong>Shape</strong></td><td>A rectangle, ellipse, polygon, star, line, arrow or pen path</td><td>A shape tool or the Pen</td></tr>
 <tr><td><strong>Text</strong></td><td>Words</td><td>The Text tool</td></tr>
-<tr><td><strong>Adjustment</strong></td><td>Changes the look of everything beneath it</td><td><strong>Add Adjustment…</strong> (<kbd>⌥⌘A</kbd>)</td></tr>
+<tr><td><strong>Adjustment</strong></td><td>Changes the look of everything beneath it</td><td><strong>New Fill or Adjustment Layer</strong> in the Layers bar, or <strong>Add Adjustment…</strong> (<kbd>⌥⌘A</kbd>)</td></tr>
 <tr><td><strong>Retouch</strong></td><td>A removal, heal or clone</td><td>The Remove tool</td></tr>
 <tr><td><strong>Group</strong></td><td>Layers held together</td><td><kbd>⌘G</kbd></td></tr>
 </tbody>
 </table>
 </div>
 <p><strong>New Layer</strong> is <kbd>⇧⌘N</kbd>.</p>
+<h3 id="the-background"><a class="header" href="#the-background">The background</a></h3>
+<p>Every new composition starts on a <strong>Background</strong> layer at the very bottom of the list. A photo
+opened in Compose sits on a white one; a new document’s is the colour chosen in its window.
+Anything you add goes above it, so it stays until you delete it.</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>To</th><th>Do this</th></tr>
+</thead>
+<tbody>
+<tr><td>Change its colour</td><td><strong>Image › White Background</strong>, <strong>Black Background</strong> or <strong>Foreground Color Background</strong>. Or choose the layer and set its <strong>Color</strong></td></tr>
+<tr><td>Make the canvas transparent</td><td><strong>Image › Transparent Background</strong>. Or choose the layer and click <strong>Transparent</strong> beside <strong>Background</strong></td></tr>
+<tr><td>Show it again</td><td>Choose the layer and click <strong>Color</strong>, or pick a colour from the Image menu</td></tr>
+<tr><td>Get it back after deleting it</td><td>Pick any background from the Image menu: it comes back at the bottom</td></tr>
+</tbody>
+</table>
+</div>
+<p>Transparent hides the layer rather than deleting it, so its eye in the list is off. A
+composition saved before backgrounds existed has none until you pick one from the Image menu.</p>
 <h2 id="the-layers-panel"><a class="header" href="#the-layers-panel">The Layers panel</a></h2>
 <p>Each row shows the layer’s thumbnail, its kind, its name and an eye.</p>
 <div class="table-wrapper">
@@ -214,8 +233,23 @@ panel lists them, top first.</p>
 </tbody>
 </table>
 </div>
-<p>The bar under the list has <strong>Add Picture</strong>, <strong>New Fill Layer</strong>, <strong>Add Adjustment</strong>, <strong>Add
-Filter or Effect</strong>, <strong>Add Mask</strong>, <strong>Group</strong>, <strong>Duplicate</strong> and <strong>Delete</strong>.</p>
+<p>The bar under the list has <strong>Add Picture</strong>, <strong>New Layer</strong>, <strong>Add Mask</strong>, <strong>New Fill or
+Adjustment Layer</strong>, <strong>Clip to Layer Below</strong>, <strong>Add Effect</strong>, <strong>Add Filter</strong>, <strong>Group</strong>,
+<strong>Duplicate</strong> and <strong>Delete</strong>.</p>
+<h3 id="fill-and-adjustment-layers"><a class="header" href="#fill-and-adjustment-layers">Fill and adjustment layers</a></h3>
+<p><strong>New Fill or Adjustment Layer</strong> in the bar opens one list: <strong>Solid Color</strong>, <strong>Gradient</strong> and
+<strong>Pattern…</strong> first, then the adjustments. The new layer goes just above the chosen one.</p>
+<p>If something is selected, the new fill or adjustment layer gets a mask of the selection, so it
+shows only there.</p>
+<p>To give a new fill or adjustment layer the same mask as a layer you already have:</p>
+<ol>
+<li><kbd>⌘</kbd>-click that layer’s mask (the small white circle after its thumbnail). Or
+right-click its row and choose <strong>Load Mask as Selection</strong>, or choose <strong>Select › Load Layer
+Mask</strong> with the layer chosen.</li>
+<li>Click <strong>New Fill or Adjustment Layer</strong> and pick one. It takes the selection as its mask.</li>
+</ol>
+<p>The selection follows the mode of the selection tools, so with <strong>Add</strong> chosen, a second mask
+adds to the first.</p>
 <h2 id="arrange"><a class="header" href="#arrange">Arrange</a></h2>
 <p>All of these are in the <strong>Layer</strong> menu and the layer’s right-click menu.</p>
 <div class="table-wrapper">

@@ -37,10 +37,10 @@
             const path_to_root = "";
             const default_light_theme = "navy";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-c4d6773a.js";
+            window.path_to_searchindex_js = "searchindex-9e9faac0.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-3aefbd58.js"></script>
+        <script src="toc-047069e4.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -1605,7 +1605,7 @@ the marking keys (<kbd>P</kbd>, <kbd>X</kbd>, <kbd>1</kbd>–<kbd>5</kbd>…) wo
 <tr><td><strong>Channel Mixer</strong>, <strong>Calibration</strong></td><td>Channel mixes, black and white, camera primaries</td><td><a href="#color">Color</a></td></tr>
 <tr><td><strong>Detail</strong></td><td>Sharpening and noise reduction</td><td><a href="#detail-sharpening-and-noise">Detail</a></td></tr>
 <tr><td><strong>Lens Correction</strong>, <strong>Chromatic Aberration</strong></td><td>Lens profile, light falloff, fringes</td><td><a href="#lens-corrections">Lens corrections</a></td></tr>
-<tr><td><strong>Vignette</strong>, <strong>Fog</strong>, <strong>Motion Blur</strong></td><td>Effects</td><td><a href="#vignette-fog-and-motion-blur">Vignette, fog and motion blur</a></td></tr>
+<tr><td><strong>Vignette</strong>, <strong>Fog</strong>, <strong>Motion Blur</strong>, <strong>Glow</strong></td><td>Effects</td><td><a href="#vignette-fog-motion-blur-and-glow">Vignette, fog, motion blur and glow</a></td></tr>
 <tr><td><strong>Plugins</strong></td><td>Looks added by shader plugins</td><td><a href="#plugins">Plugins</a></td></tr>
 </tbody>
 </table>
@@ -2141,7 +2141,7 @@ photo hasn’t enough edges to measure, it says so.</p>
 horizontal keystone) are in the <a href="#geometry">Geometry tool</a>, <kbd>⇧T</kbd>.</p>
 <h2 id="a-creative-vignette"><a class="header" href="#a-creative-vignette">A creative vignette</a></h2>
 <p>Light Falloff <em>corrects</em> the lens. To <em>add</em> a vignette that follows your crop, use the
-<strong>Vignette</strong> section. See <a href="#vignette-fog-and-motion-blur">Vignette, fog and motion blur</a>.</p>
+<strong>Vignette</strong> section. See <a href="#vignette-fog-motion-blur-and-glow">Vignette, fog, motion blur and glow</a>.</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="crop-and-straighten"><a class="header" href="#crop-and-straighten">Crop and straighten</a></h1>
 <p>Press <kbd>R</kbd> for the <strong>Crop &amp; Straighten</strong> tool. The whole photo is shown with the crop
@@ -2677,7 +2677,7 @@ reaches.</li>
 <tbody>
 <tr><td><strong>Strength</strong></td><td>How bright</td></tr>
 <tr><td><strong>Reach</strong></td><td>How far it carries</td></tr>
-<tr><td><strong>Depth</strong></td><td>How far in front of or behind the scene it is</td></tr>
+<tr><td><strong>Depth</strong></td><td>How far in front of or behind the scene it is. A light lights what’s at about its depth: one by a near person leaves a hillside far behind them dark, however close the two look in the frame, and casts its shadows from where it is in the scene</td></tr>
 <tr><td><strong>Angle</strong>, <strong>Elevation</strong></td><td>Where it points</td></tr>
 <tr><td><strong>Cone</strong>, <strong>Feather</strong></td><td>A spot’s width and softness</td></tr>
 <tr><td><strong>Temperature</strong>, <strong>Tint</strong></td><td>Its colour</td></tr>
@@ -2957,8 +2957,9 @@ tool’s film colour, tone and LUT. It can’t hold anything local (masks, sharp
 geometry).</p>
 <p>A preset can be exported the same way: right-click it and choose <strong>Export as LUT…</strong>.</p>
 <div style="break-before: page; page-break-before: always;"></div>
-<h1 id="vignette-fog-and-motion-blur"><a class="header" href="#vignette-fog-and-motion-blur">Vignette, fog and motion blur</a></h1>
-<p>Three effect sections sit at the end of the Edit tool. <strong>Fog</strong> and <strong>Motion Blur</strong> use the
+<h1 id="vignette-fog-motion-blur-and-glow"><a class="header" href="#vignette-fog-motion-blur-and-glow">Vignette, fog, motion blur and glow</a></h1>
+<p>Four effect sections sit at the end of the Edit tool, in <strong>Detail &amp; Effects</strong>. <strong>Fog</strong> and
+<strong>Motion Blur</strong> use the
 photo’s <em>depth</em> (how far each part is from the camera), which OtiRAW finds in the background
 the first time it is needed.</p>
 <blockquote>
@@ -3056,6 +3057,74 @@ the frame); double-click it to find it again.</p>
 </table>
 </div>
 <p>For <strong>Spin</strong>, drag the centre on the photo; double-click it to centre it again.</p>
+<h2 id="glow"><a class="header" href="#glow">Glow</a></h2>
+<p>Light spreading from the bright parts of the photo, as a lens, a diffusion filter or film
+spreads it: a soft bloom round lights, a mist over the frame, film’s red halo, or streaks and
+stars.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/edit-glow.webp" alt="The Glow tab: Preset and Style, its sliders, and More open with Core"><span class="img-wrapper"><img src="img/edit-glow.webp" alt="The Glow tab: Preset and Style, its sliders, and More open with Core"></span></label></p>
+<p>Start from a <strong>Preset</strong> (<strong>Soft Mist</strong>, <strong>Dream</strong>, <strong>Night Lights</strong>, <strong>Film Halation</strong>,
+<strong>Haze</strong>, <strong>Anamorphic</strong>, <strong>Starburst</strong>), or choose a <strong>Style</strong>:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Style</th><th>What it looks like</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Bloom</strong></td><td>A soft glow round the highlights: a bright core and a long, fading tail</td></tr>
+<tr><td><strong>Diffusion</strong></td><td>A mist over the whole frame, as a diffusion filter: part of the light spread wide, so the picture softens without getting brighter</td></tr>
+<tr><td><strong>Halation</strong></td><td>Film’s coloured halo round bright edges and lights</td></tr>
+<tr><td><strong>Motion</strong></td><td>Streaks one way from the brightest lights</td></tr>
+<tr><td><strong>Streak</strong></td><td>Streaks both ways, as an anamorphic lens’s</td></tr>
+<tr><td><strong>Star</strong></td><td>Rays of 4, 6 or 8 points round the brightest lights</td></tr>
+</tbody>
+</table>
+</div>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Control</th><th>What it does</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Amount</strong></td><td>How strong</td></tr>
+<tr><td><strong>Range</strong></td><td>Which tones give light: low, only what’s near white; high, down into the midtones</td></tr>
+<tr><td><strong>Spread</strong> (<strong>Length</strong> for the streaks)</td><td>How far the light reaches</td></tr>
+<tr><td><strong>Warmth</strong></td><td>Cool to warm white; for <strong>Halation</strong>, yellow to red</td></tr>
+<tr><td><strong>Light Color</strong></td><td>How much the glow keeps the colour of what gives it: a red lamp glows red. At 0 every glow is white</td></tr>
+<tr><td><strong>Veil</strong></td><td><strong>Diffusion</strong> only: lifts the shadows a little, as a real filter lowers contrast</td></tr>
+<tr><td><strong>Direction</strong>, <strong>Softness</strong></td><td>The streaks’ angle, and how soft their edges are</td></tr>
+<tr><td><strong>Points</strong></td><td><strong>Star</strong> only: 4, 6 or 8</td></tr>
+</tbody>
+</table>
+</div>
+<p>Under <strong>More</strong>:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Control</th><th>What it does</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Core</strong></td><td>Lower it to keep a bright glow coloured rather than burning to white</td></tr>
+<tr><td><strong>Dispersion</strong></td><td>Spreads the red wider than the blue, as diffraction does</td></tr>
+<tr><td><strong>Split</strong></td><td>Pulls the glow’s red and blue apart while the photo stays put: <strong>Along</strong> a line (<strong>Split Angle</strong>), or <strong>From Center</strong>. For From Center, drag the centre on the photo, even beyond its edge; double-click it to centre it again</td></tr>
+<tr><td><strong>Scene Light</strong></td><td>Lets the glow light what’s round it, as well as glowing over it</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="glow-and-masks"><a class="header" href="#glow-and-masks">Glow and masks</a></h3>
+<p>Each mask’s <strong>Effects</strong> has three Glow sliders:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Slider</th><th>What it does</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Glow</strong></td><td>More glow (up to twice) or less (down to none) where the mask is</td></tr>
+<tr><td><strong>Glow From Mask</strong></td><td>Only what this mask selects gives light; the glow still spreads past it</td></tr>
+<tr><td><strong>Self-Illuminating</strong></td><td>The mask itself gives light, in the photo’s colour there, even where it isn’t bright</td></tr>
+</tbody>
+</table>
+</div>
+<p>The Looks’ <strong>Halation</strong> and <strong>Bloom</strong> (in <a href="#looks-film-and-negatives">Film emulation</a>) use the same light.</p>
 <h2 id="in-masks-1"><a class="header" href="#in-masks-1">In masks</a></h2>
 <p>Clarity, Dehaze and Texture are available in any <a href="#masks">mask</a>. A <strong>Fog</strong> adjustment is
 also available as an adjustment layer in <a href="#adjustments-filters-and-effects">Compose</a>.</p>
@@ -3546,7 +3615,7 @@ panel to set your own:</p>
 <tr><td><strong>Color Mode</strong></td><td>RGB Color or Grayscale</td></tr>
 <tr><td><strong>Bit Depth</strong></td><td>8 or 16 bits</td></tr>
 <tr><td><strong>Color Profile</strong></td><td>The document’s colour space</td></tr>
-<tr><td><strong>Background Contents</strong></td><td>White, Black, a Color, or Transparent</td></tr>
+<tr><td><strong>Background Contents</strong></td><td>The colour of its <strong>Background</strong> layer: White, Black, a Color, or Transparent (the layer there but hidden). See <a href="#the-background">The background</a></td></tr>
 </tbody>
 </table>
 </div>
@@ -3648,16 +3717,35 @@ panel lists them, top first.</p>
 <tbody>
 <tr><td><strong>Picture</strong></td><td>A photo or image. A photo from your library keeps its edit</td><td><strong>Add Picture</strong>, or the Picture tool</td></tr>
 <tr><td><strong>Paint</strong></td><td>Brush strokes</td><td>Paint with the Brush on a new layer</td></tr>
-<tr><td><strong>Fill</strong></td><td>A solid colour, a gradient or a pattern</td><td><strong>New Fill Layer</strong></td></tr>
+<tr><td><strong>Fill</strong></td><td>A solid colour, a gradient or a pattern</td><td><strong>New Fill or Adjustment Layer</strong> in the Layers bar, or <strong>Layer › New Fill Layer</strong></td></tr>
 <tr><td><strong>Shape</strong></td><td>A rectangle, ellipse, polygon, star, line, arrow or pen path</td><td>A shape tool or the Pen</td></tr>
 <tr><td><strong>Text</strong></td><td>Words</td><td>The Text tool</td></tr>
-<tr><td><strong>Adjustment</strong></td><td>Changes the look of everything beneath it</td><td><strong>Add Adjustment…</strong> (<kbd>⌥⌘A</kbd>)</td></tr>
+<tr><td><strong>Adjustment</strong></td><td>Changes the look of everything beneath it</td><td><strong>New Fill or Adjustment Layer</strong> in the Layers bar, or <strong>Add Adjustment…</strong> (<kbd>⌥⌘A</kbd>)</td></tr>
 <tr><td><strong>Retouch</strong></td><td>A removal, heal or clone</td><td>The Remove tool</td></tr>
 <tr><td><strong>Group</strong></td><td>Layers held together</td><td><kbd>⌘G</kbd></td></tr>
 </tbody>
 </table>
 </div>
 <p><strong>New Layer</strong> is <kbd>⇧⌘N</kbd>.</p>
+<h3 id="the-background"><a class="header" href="#the-background">The background</a></h3>
+<p>Every new composition starts on a <strong>Background</strong> layer at the very bottom of the list. A photo
+opened in Compose sits on a white one; a new document’s is the colour chosen in its window.
+Anything you add goes above it, so it stays until you delete it.</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>To</th><th>Do this</th></tr>
+</thead>
+<tbody>
+<tr><td>Change its colour</td><td><strong>Image › White Background</strong>, <strong>Black Background</strong> or <strong>Foreground Color Background</strong>. Or choose the layer and set its <strong>Color</strong></td></tr>
+<tr><td>Make the canvas transparent</td><td><strong>Image › Transparent Background</strong>. Or choose the layer and click <strong>Transparent</strong> beside <strong>Background</strong></td></tr>
+<tr><td>Show it again</td><td>Choose the layer and click <strong>Color</strong>, or pick a colour from the Image menu</td></tr>
+<tr><td>Get it back after deleting it</td><td>Pick any background from the Image menu: it comes back at the bottom</td></tr>
+</tbody>
+</table>
+</div>
+<p>Transparent hides the layer rather than deleting it, so its eye in the list is off. A
+composition saved before backgrounds existed has none until you pick one from the Image menu.</p>
 <h2 id="the-layers-panel"><a class="header" href="#the-layers-panel">The Layers panel</a></h2>
 <p>Each row shows the layer’s thumbnail, its kind, its name and an eye.</p>
 <div class="table-wrapper">
@@ -3675,8 +3763,23 @@ panel lists them, top first.</p>
 </tbody>
 </table>
 </div>
-<p>The bar under the list has <strong>Add Picture</strong>, <strong>New Fill Layer</strong>, <strong>Add Adjustment</strong>, <strong>Add
-Filter or Effect</strong>, <strong>Add Mask</strong>, <strong>Group</strong>, <strong>Duplicate</strong> and <strong>Delete</strong>.</p>
+<p>The bar under the list has <strong>Add Picture</strong>, <strong>New Layer</strong>, <strong>Add Mask</strong>, <strong>New Fill or
+Adjustment Layer</strong>, <strong>Clip to Layer Below</strong>, <strong>Add Effect</strong>, <strong>Add Filter</strong>, <strong>Group</strong>,
+<strong>Duplicate</strong> and <strong>Delete</strong>.</p>
+<h3 id="fill-and-adjustment-layers"><a class="header" href="#fill-and-adjustment-layers">Fill and adjustment layers</a></h3>
+<p><strong>New Fill or Adjustment Layer</strong> in the bar opens one list: <strong>Solid Color</strong>, <strong>Gradient</strong> and
+<strong>Pattern…</strong> first, then the adjustments. The new layer goes just above the chosen one.</p>
+<p>If something is selected, the new fill or adjustment layer gets a mask of the selection, so it
+shows only there.</p>
+<p>To give a new fill or adjustment layer the same mask as a layer you already have:</p>
+<ol>
+<li><kbd>⌘</kbd>-click that layer’s mask (the small white circle after its thumbnail). Or
+right-click its row and choose <strong>Load Mask as Selection</strong>, or choose <strong>Select › Load Layer
+Mask</strong> with the layer chosen.</li>
+<li>Click <strong>New Fill or Adjustment Layer</strong> and pick one. It takes the selection as its mask.</li>
+</ol>
+<p>The selection follows the mode of the selection tools, so with <strong>Add</strong> chosen, a second mask
+adds to the first.</p>
 <h2 id="arrange"><a class="header" href="#arrange">Arrange</a></h2>
 <p>All of these are in the <strong>Layer</strong> menu and the layer’s right-click menu.</p>
 <div class="table-wrapper">
@@ -3911,6 +4014,7 @@ while you work and to take colours from. Click its name to open or fold it.</p>
 <tr><td>Look closer</td><td>Drag the zoom slider, pinch, or hold <kbd>⌘</kbd> and scroll. <strong>Fit</strong> shows all of it again</td></tr>
 <tr><td>Move about when zoomed</td><td>Scroll</td></tr>
 <tr><td>Show another</td><td>Click it in the strip</td></tr>
+<tr><td>Make the panel larger</td><td>Drag the corner at its top right up and to the right. Double-click the corner for its usual size again</td></tr>
 <tr><td>Take one off the list</td><td><strong>Remove</strong>. The file itself is not touched</td></tr>
 <tr><td>Hide the panel</td><td><strong>View › Canvas › Show References</strong>, or right-click the canvas</td></tr>
 </tbody>
@@ -4151,7 +4255,8 @@ into a mask.</p>
 <tr><td><strong>Color Range…</strong></td><td>Colours like the ones you pick</td></tr>
 <tr><td><strong>Focus Area…</strong></td><td>The parts in focus; <strong>In-Focus Range</strong> takes in more or less</td></tr>
 <tr><td><strong>Similar</strong></td><td>Everything like what is already selected</td></tr>
-<tr><td><strong>Load Layer Transparency</strong></td><td>Where the chosen layer has pixels</td></tr>
+<tr><td><strong>Load Layer Transparency</strong></td><td>Where the chosen layer has pixels. <kbd>⌘</kbd>-click a layer’s thumbnail does the same</td></tr>
+<tr><td><strong>Load Layer Mask</strong></td><td>Where the chosen layer’s mask lets it show. <kbd>⌘</kbd>-click a layer’s mask does the same</td></tr>
 <tr><td><strong>Make Selection from Path</strong></td><td>The inside of a pen path or shape</td></tr>
 </tbody>
 </table>
@@ -4198,6 +4303,25 @@ paint: black masks, white selects. Press <kbd>Q</kbd> again to turn it back into
 <tr><td><strong>Stroke…</strong></td><td></td><td>Draws a line along its edge</td></tr>
 <tr><td><strong>Add Mask from Selection</strong></td><td></td><td>The chosen layer shows only inside the selection</td></tr>
 <tr><td><strong>Crop to Selection</strong></td><td></td><td>Crops the canvas to it</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="channels"><a class="header" href="#channels">Channels</a></h2>
+<p>The <strong>Channels</strong> tab (in <strong>Panels</strong>) shows the canvas’s colour channels, the chosen layer’s mask,
+and the selections you’ve saved.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/compose-channels.webp" alt="The Channels tab: RGB, Red, Green and Blue with their eyes and small pictures, a layer’s mask and a saved selection in italics, and the buttons at its foot"><span class="img-wrapper"><img src="img/compose-channels.webp" alt="The Channels tab: RGB, Red, Green and Blue with their eyes and small pictures, a layer’s mask and a saved selection in italics, and the buttons at its foot"></span></label></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>To</th><th>Do this</th></tr>
+</thead>
+<tbody>
+<tr><td>See one channel in grey</td><td>Click its row: <strong>Red</strong>, <strong>Green</strong> or <strong>Blue</strong></td></tr>
+<tr><td>See some channels together</td><td>Click their eyes. One always stays on. <strong>RGB</strong>’s eye shows them all again</td></tr>
+<tr><td>Keep a selection</td><td>Click <strong>Save Selection as Channel</strong> (the second button at the foot). It appears in italics</td></tr>
+<tr><td>Use a saved selection or a mask</td><td>Click its row, then <strong>Load Channel as Selection</strong> (the first button), or <kbd>⌘</kbd>-click the row</td></tr>
+<tr><td>Lay a channel over a layer</td><td><strong>Apply Image…</strong> (the third button)</td></tr>
+<tr><td>Remove a saved selection</td><td>Click its row, then <strong>Delete Channel</strong></td></tr>
 </tbody>
 </table>
 </div>
@@ -4503,7 +4627,9 @@ switched off or removed later.</p>
 </table>
 </div>
 <h2 id="adjustment-layers"><a class="header" href="#adjustment-layers">Adjustment layers</a></h2>
-<p>Click <strong>Add Adjustment…</strong> in the Layers bar (<kbd>⌥⌘A</kbd>) and choose one.</p>
+<p>Click <strong>New Fill or Adjustment Layer</strong> in the Layers bar and choose one from under the fill
+layers, or press <kbd>⌥⌘A</kbd> to browse them. With a selection, the adjustment changes only
+inside it (<a href="#fill-and-adjustment-layers">Fill and adjustment layers</a>).</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -4524,6 +4650,47 @@ switched off or removed later.</p>
 <tr><td><strong>Invert</strong>, <strong>Posterize</strong>, <strong>Threshold</strong></td><td>Graphic effects</td></tr>
 <tr><td><strong>Soft Proof</strong></td><td>Shows everything beneath as it would print on a paper</td></tr>
 <tr><td><strong>Red Eye</strong></td><td>Takes the red out of pupils</td></tr>
+</tbody>
+</table>
+</div>
+<p>Sliders that change colour are drawn in the colours they move between: a hue slider shows the
+spectrum, a saturation slider runs from gray to its colour, and Temperature runs from blue to
+yellow.</p>
+<p>Some adjustments set one group at a time, picked at the top of the panel:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Adjustment</th><th>Pick</th><th>Then set</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>HSL</strong></td><td><strong>Range</strong>: <strong>Master</strong>, or <strong>Reds</strong> to <strong>Magentas</strong></td><td><strong>Hue</strong>, <strong>Saturation</strong> and <strong>Lightness</strong> for that range</td></tr>
+<tr><td><strong>Color Balance</strong></td><td><strong>Shadows</strong>, <strong>Midtones</strong> or <strong>Highlights</strong></td><td><strong>Red</strong>, <strong>Green</strong> and <strong>Blue</strong>, each against its opposite (cyan, magenta, yellow)</td></tr>
+<tr><td><strong>Channel Mixer</strong></td><td><strong>Output</strong>: <strong>Red</strong>, <strong>Green</strong> or <strong>Blue</strong></td><td>How much of each channel goes into it. <strong>Total</strong> warns when it adds up to over 100 %</td></tr>
+<tr><td><strong>Selective Color</strong></td><td><strong>Colors</strong>: <strong>Reds</strong> to <strong>Blacks</strong></td><td><strong>Cyan</strong>, <strong>Magenta</strong>, <strong>Yellow</strong> and <strong>Black</strong> for that colour</td></tr>
+</tbody>
+</table>
+</div>
+<p>Each group keeps its own settings while you look at another.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/compose-hsl.webp" alt="The HSL panel: the Range picked, Hue, Saturation and Lightness on colour sliders, Colorize, and the two spectrums"><span class="img-wrapper"><img src="img/compose-hsl.webp" alt="The HSL panel: the Range picked, Hue, Saturation and Lightness on colour sliders, Colorize, and the two spectrums"></span></label></p>
+<p>Under HSL’s sliders, two spectrums show the colours as they are (top) and as the layer turns
+them (bottom). A line under them marks the range picked.</p>
+<p><strong>Threshold</strong> shows the histogram of everything beneath it with its level as a handle: drag it,
+or type the <strong>Threshold Level</strong> (1–255). <strong>Replace Color</strong> shows the <strong>Result</strong>: the colour you
+chose beside what it becomes.</p>
+<p><strong>Levels</strong> shows the histogram of everything beneath it.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/compose-levels.webp" alt="The Levels panel: the channel and Auto, the eyedroppers beside the histogram, the input handles and numbers, and the output ramp"><span class="img-wrapper"><img src="img/compose-levels.webp" alt="The Levels panel: the channel and Auto, the eyedroppers beside the histogram, the input handles and numbers, and the output ramp"></span></label></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>To</th><th>Do this</th></tr>
+</thead>
+<tbody>
+<tr><td>Darken the shadows or brighten the highlights</td><td>Drag the black or white handle under the histogram in, or type its level (0–255)</td></tr>
+<tr><td>Lighten or darken the midtones</td><td>Drag the gray handle: towards black is lighter. The middle box is its gamma</td></tr>
+<tr><td>Lift the blacks or dim the whites</td><td>Drag the handles under the black-to-white ramp, or type <strong>Output Levels</strong></td></tr>
+<tr><td>Work on one colour</td><td>Choose <strong>Red</strong>, <strong>Green</strong> or <strong>Blue</strong> instead of <strong>RGB</strong>. Each channel keeps its own levels</td></tr>
+<tr><td>Set the black, gray or white point</td><td>Click one of the three eyedroppers, then click the picture where it should be black, a neutral gray, or white. Click the eyedropper again to put it down</td></tr>
+<tr><td>Let it decide</td><td><strong>Auto</strong> sets black and white where the picture’s darkest and lightest begin</td></tr>
 </tbody>
 </table>
 </div>

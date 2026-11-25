@@ -36,10 +36,10 @@
             const path_to_root = "../";
             const default_light_theme = "navy";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-c4d6773a.js";
+            window.path_to_searchindex_js = "../searchindex-9e9faac0.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../toc-3aefbd58.js"></script>
+        <script src="../toc-047069e4.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -221,7 +221,8 @@ into a mask.</p>
 <tr><td><strong>Color Range…</strong></td><td>Colours like the ones you pick</td></tr>
 <tr><td><strong>Focus Area…</strong></td><td>The parts in focus; <strong>In-Focus Range</strong> takes in more or less</td></tr>
 <tr><td><strong>Similar</strong></td><td>Everything like what is already selected</td></tr>
-<tr><td><strong>Load Layer Transparency</strong></td><td>Where the chosen layer has pixels</td></tr>
+<tr><td><strong>Load Layer Transparency</strong></td><td>Where the chosen layer has pixels. <kbd>⌘</kbd>-click a layer’s thumbnail does the same</td></tr>
+<tr><td><strong>Load Layer Mask</strong></td><td>Where the chosen layer’s mask lets it show. <kbd>⌘</kbd>-click a layer’s mask does the same</td></tr>
 <tr><td><strong>Make Selection from Path</strong></td><td>The inside of a pen path or shape</td></tr>
 </tbody>
 </table>
@@ -268,6 +269,25 @@ paint: black masks, white selects. Press <kbd>Q</kbd> again to turn it back into
 <tr><td><strong>Stroke…</strong></td><td></td><td>Draws a line along its edge</td></tr>
 <tr><td><strong>Add Mask from Selection</strong></td><td></td><td>The chosen layer shows only inside the selection</td></tr>
 <tr><td><strong>Crop to Selection</strong></td><td></td><td>Crops the canvas to it</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="channels"><a class="header" href="#channels">Channels</a></h2>
+<p>The <strong>Channels</strong> tab (in <strong>Panels</strong>) shows the canvas’s colour channels, the chosen layer’s mask,
+and the selections you’ve saved.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/compose-channels.webp" alt="The Channels tab: RGB, Red, Green and Blue with their eyes and small pictures, a layer’s mask and a saved selection in italics, and the buttons at its foot"><span class="img-wrapper"><img src="../img/compose-channels.webp" alt="The Channels tab: RGB, Red, Green and Blue with their eyes and small pictures, a layer’s mask and a saved selection in italics, and the buttons at its foot"></span></label></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>To</th><th>Do this</th></tr>
+</thead>
+<tbody>
+<tr><td>See one channel in grey</td><td>Click its row: <strong>Red</strong>, <strong>Green</strong> or <strong>Blue</strong></td></tr>
+<tr><td>See some channels together</td><td>Click their eyes. One always stays on. <strong>RGB</strong>’s eye shows them all again</td></tr>
+<tr><td>Keep a selection</td><td>Click <strong>Save Selection as Channel</strong> (the second button at the foot). It appears in italics</td></tr>
+<tr><td>Use a saved selection or a mask</td><td>Click its row, then <strong>Load Channel as Selection</strong> (the first button), or <kbd>⌘</kbd>-click the row</td></tr>
+<tr><td>Lay a channel over a layer</td><td><strong>Apply Image…</strong> (the third button)</td></tr>
+<tr><td>Remove a saved selection</td><td>Click its row, then <strong>Delete Channel</strong></td></tr>
 </tbody>
 </table>
 </div>

@@ -36,10 +36,10 @@
             const path_to_root = "../";
             const default_light_theme = "navy";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-c4d6773a.js";
+            window.path_to_searchindex_js = "../searchindex-9e9faac0.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../toc-3aefbd58.js"></script>
+        <script src="../toc-047069e4.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -191,7 +191,9 @@ switched off or removed later.</p>
 </table>
 </div>
 <h2 id="adjustment-layers"><a class="header" href="#adjustment-layers">Adjustment layers</a></h2>
-<p>Click <strong>Add Adjustment…</strong> in the Layers bar (<kbd>⌥⌘A</kbd>) and choose one.</p>
+<p>Click <strong>New Fill or Adjustment Layer</strong> in the Layers bar and choose one from under the fill
+layers, or press <kbd>⌥⌘A</kbd> to browse them. With a selection, the adjustment changes only
+inside it (<a href="layers.html#fill-and-adjustment-layers">Fill and adjustment layers</a>).</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -212,6 +214,47 @@ switched off or removed later.</p>
 <tr><td><strong>Invert</strong>, <strong>Posterize</strong>, <strong>Threshold</strong></td><td>Graphic effects</td></tr>
 <tr><td><strong>Soft Proof</strong></td><td>Shows everything beneath as it would print on a paper</td></tr>
 <tr><td><strong>Red Eye</strong></td><td>Takes the red out of pupils</td></tr>
+</tbody>
+</table>
+</div>
+<p>Sliders that change colour are drawn in the colours they move between: a hue slider shows the
+spectrum, a saturation slider runs from gray to its colour, and Temperature runs from blue to
+yellow.</p>
+<p>Some adjustments set one group at a time, picked at the top of the panel:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Adjustment</th><th>Pick</th><th>Then set</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>HSL</strong></td><td><strong>Range</strong>: <strong>Master</strong>, or <strong>Reds</strong> to <strong>Magentas</strong></td><td><strong>Hue</strong>, <strong>Saturation</strong> and <strong>Lightness</strong> for that range</td></tr>
+<tr><td><strong>Color Balance</strong></td><td><strong>Shadows</strong>, <strong>Midtones</strong> or <strong>Highlights</strong></td><td><strong>Red</strong>, <strong>Green</strong> and <strong>Blue</strong>, each against its opposite (cyan, magenta, yellow)</td></tr>
+<tr><td><strong>Channel Mixer</strong></td><td><strong>Output</strong>: <strong>Red</strong>, <strong>Green</strong> or <strong>Blue</strong></td><td>How much of each channel goes into it. <strong>Total</strong> warns when it adds up to over 100 %</td></tr>
+<tr><td><strong>Selective Color</strong></td><td><strong>Colors</strong>: <strong>Reds</strong> to <strong>Blacks</strong></td><td><strong>Cyan</strong>, <strong>Magenta</strong>, <strong>Yellow</strong> and <strong>Black</strong> for that colour</td></tr>
+</tbody>
+</table>
+</div>
+<p>Each group keeps its own settings while you look at another.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/compose-hsl.webp" alt="The HSL panel: the Range picked, Hue, Saturation and Lightness on colour sliders, Colorize, and the two spectrums"><span class="img-wrapper"><img src="../img/compose-hsl.webp" alt="The HSL panel: the Range picked, Hue, Saturation and Lightness on colour sliders, Colorize, and the two spectrums"></span></label></p>
+<p>Under HSL’s sliders, two spectrums show the colours as they are (top) and as the layer turns
+them (bottom). A line under them marks the range picked.</p>
+<p><strong>Threshold</strong> shows the histogram of everything beneath it with its level as a handle: drag it,
+or type the <strong>Threshold Level</strong> (1–255). <strong>Replace Color</strong> shows the <strong>Result</strong>: the colour you
+chose beside what it becomes.</p>
+<p><strong>Levels</strong> shows the histogram of everything beneath it.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/compose-levels.webp" alt="The Levels panel: the channel and Auto, the eyedroppers beside the histogram, the input handles and numbers, and the output ramp"><span class="img-wrapper"><img src="../img/compose-levels.webp" alt="The Levels panel: the channel and Auto, the eyedroppers beside the histogram, the input handles and numbers, and the output ramp"></span></label></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>To</th><th>Do this</th></tr>
+</thead>
+<tbody>
+<tr><td>Darken the shadows or brighten the highlights</td><td>Drag the black or white handle under the histogram in, or type its level (0–255)</td></tr>
+<tr><td>Lighten or darken the midtones</td><td>Drag the gray handle: towards black is lighter. The middle box is its gamma</td></tr>
+<tr><td>Lift the blacks or dim the whites</td><td>Drag the handles under the black-to-white ramp, or type <strong>Output Levels</strong></td></tr>
+<tr><td>Work on one colour</td><td>Choose <strong>Red</strong>, <strong>Green</strong> or <strong>Blue</strong> instead of <strong>RGB</strong>. Each channel keeps its own levels</td></tr>
+<tr><td>Set the black, gray or white point</td><td>Click one of the three eyedroppers, then click the picture where it should be black, a neutral gray, or white. Click the eyedropper again to put it down</td></tr>
+<tr><td>Let it decide</td><td><strong>Auto</strong> sets black and white where the picture’s darkest and lightest begin</td></tr>
 </tbody>
 </table>
 </div>
